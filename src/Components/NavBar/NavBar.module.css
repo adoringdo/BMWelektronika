@@ -1,0 +1,38 @@
+.navBar {
+    background-color: var(--brand-secondary);
+    padding: 4px 3%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navBar a {
+    color: white;
+    transition: color .15s ease-in-out,
+        transform .15s ease-in-out
+}
+
+.navBar a:hover {
+    color: var(--dark);
+    transform: scale(110%);
+}
+
+
+.logoContainer>img {
+    width: 50px;
+    height: 50px;
+    margin-right: 3%;
+}
+
+.navBar .logoContainer:hover {
+    color: white;
+}
+
+
+.navLinksContainer {
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 3%;
+}
