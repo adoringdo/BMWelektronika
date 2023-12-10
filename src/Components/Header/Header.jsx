@@ -6,8 +6,8 @@ import styles from './Header.module.css';
 
 export default function Header() {
   return (
-    <header>
-      <Container className={styles.header}>
+    <header className={styles.header}>
+      <Container className={styles.container}>
         <Row className="h-100">
           <Col className={styles.text}>
             <h1>
