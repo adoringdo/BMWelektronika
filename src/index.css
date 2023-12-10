@@ -5,14 +5,12 @@
 }
 
 :root {
-  --brand-main: #222;
+  --brand-main: #000;
   --brand-secondary: #A1190B;
   --light-gray: #4d4d4d;
   --font-main: #fff;
   --dark: #000;
 
-  scrollbar-color: var(--brand-secondary) var(--brand-main);
-  scrollbar-width: 12px;
 }
 
 ::-webkit-scrollbar {
