@@ -21,8 +21,8 @@ export default function Header() {
               <br /> BMW mašinoms
             </h1>
             <p>
-              Suteikiam BMW turėtojams galimybę,matyti variklio temperatūrą savo
-              skydelyje vietoj autopiloto.
+              Suteikiam BMW turėtojams galimybę, matyti variklio temperatūrą
+              savo skydelyje vietoj autopiloto.
             </p>
           </Col>
           <Col></Col>
