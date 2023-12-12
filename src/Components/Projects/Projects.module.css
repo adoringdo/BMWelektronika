@@ -92,5 +92,16 @@
 
 .imageContainer img {
     width: 100%;
+    min-width: 380px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .imageContainer {
+        order: -1;
+    }
+
+    .container {
+        padding: 5% 5%
+    }
 }

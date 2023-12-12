@@ -19,3 +19,9 @@
 .imageContainer img {
     width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+    .description {
+        position: static;
+    }
+}
