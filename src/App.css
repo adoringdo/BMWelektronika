@@ -2,13 +2,3 @@
   background-color: var(--brand-main);
   color: var(--font-main);
 }
-
-
-.page {
-  height: calc(100vh - 68px);
-  overflow-y: scroll;
-  position: relative;
-
-  scrollbar-color: var(--brand-secondary) var(--brand-main);
-  scrollbar-width: 12px;
-}
