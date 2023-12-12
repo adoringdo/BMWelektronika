@@ -1,5 +1,5 @@
 .header {
-    height: 100%;
+    height: var(--viewport-height);
     max-width: unset;
     background-image: url('../../assets/main-car-cropped.jpg');
     background-size: 60%;

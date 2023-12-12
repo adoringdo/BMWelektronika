@@ -19,8 +19,13 @@ function App() {
   return (
     <>
       <AnimatePresence>{isLoading && <LoadingScreen />}</AnimatePresence>
-      <NavBar />
-      <div className="page">
+      <div
+        style={{
+          overflow: isLoading ? 'hidden' : 'unset',
+          height: isLoading ? '100vh' : 'unset',
+        }}
+      >
+        <NavBar />
         <Header />
         <Projects />
         <Overview />
