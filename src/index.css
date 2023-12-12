@@ -7,10 +7,10 @@
 :root {
   --brand-main: #000;
   --brand-secondary: #A1190B;
-  --light-gray: #4d4d4d;
+  --dark-gray: #171717;
   --font-main: #fff;
   --dark: #000;
-
+  --viewport-height: calc(100vh - 68px);
 }
 
 ::-webkit-scrollbar {
