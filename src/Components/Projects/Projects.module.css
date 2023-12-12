@@ -25,6 +25,19 @@
 
 .description h1 {
     font-size: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.description h1::after {
+    content: '';
+    height: 35px;
+    width: 35px;
+    background-color: var(--brand-secondary);
+    position: absolute;
+    top: 2px;
+    left: -8px;
+    z-index: -1;
 }
 
 .description p {

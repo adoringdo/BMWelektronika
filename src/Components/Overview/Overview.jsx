@@ -10,14 +10,14 @@ export default function Overview() {
   return (
     <Container fluid className={styles.container}>
       <Row className={styles.row}>
-        <Col xs={5} className={`${styles.description} px-5`}>
+        <Col md={5} className={`${styles.description} px-5`}>
           <h1>How it Looks</h1>
-          <p>
+          <p className="px-4">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Accusantium, quibusdam.
           </p>
         </Col>
-        <Col xs={7} className={styles.imageContainer}>
+        <Col md={7} className={styles.imageContainer}>
           <img src={adapter} alt="Adapter" />
           <img src={adapter2} alt="Adapter" />
         </Col>
