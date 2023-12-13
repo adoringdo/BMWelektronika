@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
     position: sticky;
     top: 68px;
 }
@@ -17,4 +18,10 @@
 
 .imageContainer img {
     width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .description {
+        position: static;
+    }
 }

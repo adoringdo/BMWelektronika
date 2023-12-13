@@ -56,3 +56,31 @@ header::after {
 .text p {
     font-size: 1.2rem;
 }
+
+@media (max-width:980px) {
+    .header {
+        background-size: 80%;
+        background-position-x: 100%;
+        background-position-y: center;
+    }
+
+    .text h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        background-size: cover;
+        background-position-x: 30%;
+        background-position-y: center;
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+}
