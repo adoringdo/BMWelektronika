@@ -50,3 +50,9 @@ span.text {
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (max-width: 700px) {
+    .email {
+        font-size: 1.3rem;
+    }
+}
