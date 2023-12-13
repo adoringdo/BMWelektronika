@@ -120,11 +120,12 @@
 }
 
 .modalImages img {
-    border: 1px solid var(--brand-secondary);
+    border: 3px solid var(--brand-secondary);
 }
 
 .install {
     width: 80%;
+    max-width: 910px;
     padding-right: 30px;
     display: flex;
     justify-content: center;
