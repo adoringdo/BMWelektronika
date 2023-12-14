@@ -3,10 +3,11 @@ import email from '../../assets/email.png';
 import facebook from '../../assets/facebook.png';
 import messenger from '../../assets/messenger.png';
 import ebay from '../../assets/ebay.png';
+import { Element } from 'react-scroll';
 
 export default function Contact() {
   return (
-    <section className={styles.contact}>
+    <Element id="contact" className={styles.contact}>
       <div className={styles.contactBody}>
         <h1 className={styles.contact}>Interested? Email me at:</h1>
         <h1 className={styles.email}>
@@ -37,6 +38,6 @@ export default function Contact() {
       >
         Icons created by Freepik - Flaticon
       </a>
-    </section>
+    </Element>
   );
 }

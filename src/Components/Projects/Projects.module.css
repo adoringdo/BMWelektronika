@@ -178,3 +178,9 @@
         order: unset;
     }
 }
+
+@media screen and (max-width:380px) {
+    .imageContainer img {
+        min-width: unset;
+    }
+}
