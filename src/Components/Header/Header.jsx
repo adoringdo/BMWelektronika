@@ -18,7 +18,7 @@ export default function Header() {
                 </span>
               </span>{' '}
               modifikacija
-              <br /> BMW mašinoms
+              <br /> BMW automobiliams
             </h1>
             <p>
               Suteikiam BMW turėtojams galimybę, matyti variklio temperatūrą

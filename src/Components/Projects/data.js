@@ -10,17 +10,20 @@ import secondProjectImg2 from '../../assets/project2/project image 2.jpg';
 export const projects = [
   {
     mainImg: projectmain1,
-    title: 'Project 1',
+    title: 'Projektas 1',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, reiciendis!',
+      'Variklio temperatūros vietoj autopiloto modas E60, E70, E90 automobiliams',
     pictures: [firstProjectImg1, firstProjectImg2, firstProjectImg3],
     install: firstInstallImg3,
+    installDescription: 'LCI modeliams reikalinga nedidelė spidometro modifikacija',
   },
   {
     mainImg: projectmain2,
-    title: 'Project 2',
+    title: 'Projektas 2',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, reiciendis!',
+      'M3 stiliaus variklio temperatūra E90 serijos dyzeliniams automobiliams',
     pictures: [secondProjectImg1, secondProjectImg2],
   },
 ];
+
+

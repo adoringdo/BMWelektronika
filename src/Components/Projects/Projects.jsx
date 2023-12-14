@@ -46,12 +46,9 @@ function Project({ project }) {
           {project.install && (
             <div className={styles.install}>
               <div className={styles.text}>
-                <h1>Easy to install</h1>
+                <h1>Modifikacija LCI modeliams</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  delectus veniam voluptate esse labore officiis aperiam sequi
-                  quis. Eaque repellat facere vitae modi accusantium odit
-                  laudantium veritatis architecto dicta saepe!
+                {project.installDescription}
                 </p>
               </div>
 

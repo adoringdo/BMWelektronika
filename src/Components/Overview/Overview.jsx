@@ -11,10 +11,9 @@ export default function Overview() {
     <Container fluid className={styles.container}>
       <Row className={styles.row}>
         <Col md={5} className={`${styles.description} px-5`}>
-          <h1>How it Looks</h1>
+          <h1>Lengva instaliacija</h1>
           <p className="px-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium, quibusdam.
+          Tik 4 laidai, LCI modeliams reikalinga nedidelė spidometro modifikacija
           </p>
         </Col>
         <Col md={7} className={styles.imageContainer}>
