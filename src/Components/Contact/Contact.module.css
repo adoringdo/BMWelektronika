@@ -56,3 +56,9 @@ span.text {
         font-size: 1.3rem;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .contact {
+        padding: 2rem 10px;
+    }
+}

@@ -1,5 +1,7 @@
 import { projects } from './data';
 import { useState } from 'react';
+import { Element } from 'react-scroll';
+import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -27,6 +29,7 @@ function Project({ project }) {
         onHide={() => setShow(false)}
         dialogClassName={styles.modal}
         contentClassName={styles.modalContent}
+        style={{ paddingLeft: '0' }}
       >
         <Modal.Header
           closeButton
@@ -47,9 +50,7 @@ function Project({ project }) {
             <div className={styles.install}>
               <div className={styles.text}>
                 <h1>Modifikacija LCI modeliams</h1>
-                <p>
-                {project.installDescription}
-                </p>
+                <p>{project.installDescription}</p>
               </div>
 
               <div className={styles.image}>
@@ -63,15 +64,19 @@ function Project({ project }) {
   );
 }
 
+Project.propTypes = {
+  project: PropTypes.object,
+};
+
 export default function Projects() {
   return (
-    <>
+    <Element id="projects">
       <h1 className={styles.title}>Projects</h1>
       <Container className={styles.container}>
         {projects.map((project) => (
           <Project project={project} key={project.title} />
         ))}
       </Container>
-    </>
+    </Element>
   );
 }
