@@ -13,9 +13,10 @@ export const projects = [
     title: 'Projektas 1',
     description:
       'Variklio temperatūros vietoj autopiloto modas E60, E70, E90 automobiliams',
-    pictures: [firstProjectImg1, firstProjectImg2, firstProjectImg3],
+    pictures: [firstProjectImg3, firstProjectImg2, firstProjectImg1],
     install: firstInstallImg3,
-    installDescription: 'LCI modeliams reikalinga nedidelė spidometro modifikacija',
+    installDescription:
+      'LCI modeliams reikalinga nedidelė spidometro modifikacija',
   },
   {
     mainImg: projectmain2,
@@ -25,5 +26,3 @@ export const projects = [
     pictures: [secondProjectImg1, secondProjectImg2],
   },
 ];
-
-

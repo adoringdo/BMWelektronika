@@ -3,12 +3,14 @@ import email from '../../assets/email.png';
 import facebook from '../../assets/facebook.png';
 import messenger from '../../assets/messenger.png';
 import ebay from '../../assets/ebay.png';
+import { Element } from 'react-scroll';
 
 export default function Contact() {
   return (
-    <section className={styles.contact}>
-      <div className={styles.contactBody}>
-        <h1 className={styles.contact}>Domina? Parašykite mums:</h1>
+    <Element id="contact" className={styles.contact}>
+    
+      
+    <h1 className={styles.contact}>Domina? Parašykite mums:</h1>
         <h1 className={styles.email}>
           <img src={email} alt="email icon" /> bmwelektronikalt@gmail.com
         </h1>
@@ -34,7 +36,6 @@ export default function Contact() {
             </a>
           </div>
         </div>
-      </div>
       <a
         style={{ display: 'inline-block', marginTop: '3rem', color: '#fff' }}
         href="https://www.flaticon.com/free-icons/email"
@@ -43,6 +44,6 @@ export default function Contact() {
       >
         Icons created by Freepik - Flaticon
       </a>
-    </section>
+    </Element>
   );
 }
