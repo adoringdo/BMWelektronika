@@ -114,19 +114,21 @@
 }
 
 .modalImages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 40px;
 }
 
 .modalImages img {
     border: 3px solid var(--brand-secondary);
+    max-width: 100%;
 }
 
 .install {
     width: 80%;
     max-width: 910px;
-    padding-right: 30px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -136,33 +138,34 @@
 }
 
 .text {
-    width: 30%;
+    width: 35%;
     color: white;
-    margin: 3em 2em 3em 5em;
+    padding: 2rem;
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.install .text h1 {
+.text h1 {
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.install .text p {
+.text p {
     font-family: serif;
     line-height: 1.4;
     font-size: 1.1em;
 }
 
-.install .image {
+.image {
     flex-grow: 1;
     margin: 3em 0;
 }
 
-.install .image img {
+.image img {
     max-width: 100%;
     display: flex;
     margin: auto;
@@ -176,6 +179,41 @@
 
     .project:nth-child(2n-1) .imageContainer {
         order: unset;
+    }
+
+    .install {
+        width: 95%;
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        width: 100%;
+        margin: 0;
+        padding: 1em 2em;
+    }
+
+    .text p {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image img {
+        border-radius: 20px 20px 0 0;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .modal {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
     }
 }
 

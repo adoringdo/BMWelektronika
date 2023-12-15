@@ -42,7 +42,6 @@
 
 .active {
     text-decoration: none;
-    color: var(--dark);
 }
 
 @media screen and (max-width: 991px) {
