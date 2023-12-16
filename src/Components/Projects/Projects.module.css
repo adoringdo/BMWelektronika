@@ -115,7 +115,7 @@
 
 .modalImages {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     justify-items: center;
     align-items: center;
     grid-row-gap: 40px;
@@ -127,21 +127,21 @@
 }
 
 .install {
+    background-color: var(--dark-gray);
     width: 80%;
     max-width: 910px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: var(--dark-gray);
-    margin: 5rem auto;
-    border-radius: 20px;
+    gap: 20px;
 }
 
 .text {
     width: 35%;
     color: white;
-    padding: 2rem;
-    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,13 +162,48 @@
 
 .image {
     flex-grow: 1;
-    margin: 3em 0;
+    display: flex;
+    align-items: center;
 }
 
 .image img {
     max-width: 100%;
     display: flex;
     margin: auto;
+}
+
+
+@media screen and (max-width: 900px) {
+    .install {
+        width: 95%;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .text {
+        width: 100%;
+        margin: 0;
+        padding: 1em 2em;
+    }
+
+    .text h1 {
+        margin-bottom: 10px;
+    }
+
+    .text p {
+        padding: 0 2em;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image img {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+    }
 }
 
 
@@ -181,39 +216,22 @@
         order: unset;
     }
 
-    .install {
-        width: 95%;
-        flex-direction: column-reverse;
-    }
-
-    .text {
-        width: 100%;
-        margin: 0;
-        padding: 1em 2em;
-    }
-
-    .text p {
-        padding: 2em;
-        text-align: center;
-    }
-
-    .image {
-        width: 100%;
-        margin: 0;
-    }
-
-    .image img {
-        border-radius: 20px 20px 0 0;
-    }
-
 }
+
 
 @media screen and (max-width:450px) {
     .modal {
         max-width: 100%;
         width: 100%;
-        padding-left: 0;
         margin: 0;
+    }
+
+    .modalContent {
+        padding-left: 0 !important;
+    }
+
+    .modalImages {
+        grid-template-columns: 1fr;
     }
 }
 

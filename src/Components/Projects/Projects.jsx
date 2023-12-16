@@ -29,7 +29,6 @@ function Project({ project }) {
         onHide={() => setShow(false)}
         dialogClassName={styles.modal}
         contentClassName={styles.modalContent}
-        style={{ paddingLeft: '0' }}
       >
         <Modal.Header
           closeButton
