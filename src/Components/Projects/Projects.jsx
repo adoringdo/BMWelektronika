@@ -21,7 +21,7 @@ function Project({ project }) {
         <h1>{project.title}</h1>
         <p>{project.description}</p>
         <button className={styles.button} onClick={() => setShow(true)}>
-          See More
+          Plačiau
         </button>
       </Col>
       <Modal
@@ -70,7 +70,7 @@ Project.propTypes = {
 export default function Projects() {
   return (
     <Element id="projects">
-      <h1 className={styles.title}>Projects</h1>
+      <h1 className={styles.title}>Projektai</h1>
       <Container className={styles.container}>
         {projects.map((project) => (
           <Project project={project} key={project.title} />
