@@ -1,9 +1,9 @@
-import styles from './Contact.module.css';
-import email from '../../assets/email.png';
-import facebook from '../../assets/facebook.png';
-import messenger from '../../assets/messenger.png';
-import ebay from '../../assets/ebay.png';
-import { Element } from 'react-scroll';
+import styles from "./Contact.module.css";
+import email from "../../assets/email.png";
+import facebook from "../../assets/facebook.png";
+import messenger from "../../assets/messenger.png";
+import ebay from "../../assets/ebay.png";
+import { Element } from "react-scroll";
 
 export default function Contact() {
   return (
@@ -16,7 +16,7 @@ export default function Contact() {
       <p className={styles.text}>Susisiekite su mumis:</p>
       <div className={styles.socials}>
         <div className={styles.social}>
-          <a href="https://facebook.com/BMWengineTemperatureMod" target="blank">
+          <a href="https://facebook.com/BMVelektronika" target="blank">
             <img src={facebook} alt="facebook icon" />
             <div>Facebook</div>
           </a>
@@ -31,14 +31,14 @@ export default function Contact() {
           </a>
         </div>
         <div className={styles.social}>
-          <a href="https://m.me/104530015573802" target="blank">
+          <a href="https://m.me/E60mod" target="blank">
             <img src={messenger} alt="messenger icon" />
             <div>Messenger</div>
           </a>
         </div>
       </div>
       <a
-        style={{ display: 'inline-block', marginTop: '3rem', color: '#fff' }}
+        style={{ display: "inline-block", marginTop: "3rem", color: "#fff" }}
         href="https://www.flaticon.com/free-icons/email"
         title="email icons"
         target="blank"

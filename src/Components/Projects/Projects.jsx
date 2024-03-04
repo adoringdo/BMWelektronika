@@ -1,13 +1,13 @@
-import { projects } from './data';
-import { useState } from 'react';
-import { Element } from 'react-scroll';
-import PropTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Modal from 'react-bootstrap/Modal';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './Projects.module.css';
+import { projects } from "./data";
+import { useState } from "react";
+import { Element } from "react-scroll";
+import PropTypes from "prop-types";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import styles from "./Projects.module.css";
 
 function Project({ project }) {
   const [show, setShow] = useState(false);
@@ -33,9 +33,9 @@ function Project({ project }) {
         <Modal.Header
           closeButton
           closeVariant="white"
-          style={{ border: 'none' }}
+          style={{ border: "none" }}
         >
-          <Modal.Title style={{ flexGrow: '1', fontSize: '2rem' }}>
+          <Modal.Title style={{ flexGrow: "1", fontSize: "2rem" }}>
             {project.title}
           </Modal.Title>
         </Modal.Header>
@@ -45,6 +45,13 @@ function Project({ project }) {
               <img src={picture} alt="project image" key={picture} />
             ))}
           </div>
+          <iframe
+            className={styles.video}
+            src={project.video}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
           {project.install && (
             <div className={styles.install}>
               <div className={styles.text}>

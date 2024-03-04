@@ -54,7 +54,7 @@
     background-color: #1b1b1b;
     color: #f8efd4;
     font-size: 22px;
-    font-family: Big Shoulders Stencil Display, cursive;
+    font-family: Big Shoulders Stencil Display, sans-serif;
     text-transform: uppercase;
     transition: all .4s;
     cursor: pointer;
@@ -103,8 +103,9 @@
 /***************  Modal Styles  ****************/
 
 .modal {
-    width: 90%;
-    max-width: 90%;
+    min-width: 60%;
+    background-color: gray;
+    border-radius: 8px;
 }
 
 .modalContent {
@@ -113,16 +114,16 @@
     text-align: center;
 }
 
-.modalImages {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    justify-items: center;
-    align-items: center;
-    grid-row-gap: 40px;
-}
 
 .modalImages img {
     border: 3px solid var(--brand-secondary);
+    max-width: 100%;
+    margin: 40px;
+}
+
+.video {
+    width: 800px;
+    height: 600px;
     max-width: 100%;
 }
 
@@ -179,7 +180,6 @@
         flex-direction: column-reverse;
         padding: 0;
     }
-
     .text {
         width: 100%;
         margin: 0;
@@ -203,6 +203,11 @@
     .image img {
         border-radius: 20px 20px 0 0;
         width: 100%;
+    }
+    .video{
+        max-width: 90%;
+        height: auto;
+        min-height: 200px;
     }
 }
 

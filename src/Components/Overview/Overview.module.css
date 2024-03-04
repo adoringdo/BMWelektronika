@@ -12,6 +12,50 @@
 }
 
 
+.button {
+    padding: 12px 22px;
+    border: 0;
+    width: 100%;
+    white-space: nowrap;
+    text-decoration: none;
+    max-width: 300px;
+    border-radius: 4px;
+    border: 1px solid #f8efd4;
+    background-color: #1b1b1b;
+    color: #f8efd4;
+    font-size: 22px;
+    font-family: Big Shoulders Stencil Display, sans-serif;
+    text-transform: uppercase;
+    transition: all .4s;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    bottom: -150%;
+    left: -10px;
+    z-index: -1;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: var(--brand-secondary);
+    transition: .4s;
+    opacity: 1;
+}
+
+.button:hover {
+    background-color: #f87f7f;
+    letter-spacing: 2px;
+}
+
+.button:hover::before {
+    transform: translateY(calc(-100% + 3px));
+
+}
+
 .imageContainer {
     padding: 0;
 }
