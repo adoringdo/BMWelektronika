@@ -7,10 +7,13 @@ import './App.css';
 import Projects from './Components/Projects/Projects';
 import Overview from './Components/Overview/Overview';
 import Contact from './Components/Contact/Contact';
+import { LanguageContext } from './Components/Contexts/languageContext';
 
 function App() {
   const [isLoading, setIsloading] = useState(true);
+  const [language, setLanguage] = useState('en');
 
+  //loading screen
   useEffect(() => {
     setTimeout(() => {
       setIsloading(false);
@@ -25,11 +28,13 @@ function App() {
           height: isLoading ? '100vh' : 'unset',
         }}
       >
-        <NavBar />
-        <Header />
-        <Projects />
-        <Overview />
-        <Contact />
+        <LanguageContext.Provider value={{ language, setLanguage }}>
+          <NavBar />
+          <Header />
+          <Projects />
+          <Overview />
+          <Contact />
+        </LanguageContext.Provider>
       </div>
     </>
   );

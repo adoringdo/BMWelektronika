@@ -3,8 +3,13 @@ import logo from '../../assets/logo.png';
 import { Link } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './NavBar.module.css';
+import { LanguageContext, translate } from '../Contexts/languageContext';
+import { useContext } from 'react';
 
 export default function NavBar() {
+
+  const { language } = useContext(LanguageContext);
+
   return (
     <Navbar expand="lg" className={styles.navBar}>
       <Link
@@ -28,7 +33,7 @@ export default function NavBar() {
               className="nav-link"
               offset={-68}
             >
-              Projektai
+              {translate(language, 'navbar.projects')}
             </Link>
           </li>
           <li className="nav-item">
@@ -39,7 +44,7 @@ export default function NavBar() {
               className="nav-link"
               offset={-68}
             >
-              Instaliacija
+              {translate(language, 'navbar.installation')}
             </Link>
           </li>
           <li className="nav-item">
@@ -50,7 +55,7 @@ export default function NavBar() {
               className="nav-link"
               offset={-68}
             >
-              Kontaktai
+              {translate(language, 'navbar.contacts')}
             </Link>
           </li>
         </ul>
