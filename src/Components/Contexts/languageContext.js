@@ -9,7 +9,7 @@ const translations = {
       contacts: 'Contacts',
     },
     header: {
-      title: 'Engine temperature mod for BMW cars',
+      title: 'Engine temperature MOD for BMW cars',
       description:
         'Give BMW owners the ability to see the engine temperature on their dashboard instead of the autopilot.',
     },
@@ -20,6 +20,7 @@ const translations = {
       title2: 'Module 2',
       description2:
         'M3 style engine water temperature for E9x series diesel cars',
+      button: "More"
     },
     installation: {
       title: 'Easy installation',
@@ -30,7 +31,7 @@ const translations = {
     contacts: {
       title: 'Interested? Write to us:',
       'contact us': 'Contact us:',
-      or: 'or',
+      or: 'o r',
     },
   },
   lt: {
@@ -51,6 +52,7 @@ const translations = {
       title2: 'Modulis 2',
       description2:
         'M3 stiliaus variklio vandens temperatūra E9x serijos dyzeliniams automobiliams',
+      button: 'Daugiau'
     },
     installation: {
       title: 'Lengva instaliacija',
@@ -61,7 +63,7 @@ const translations = {
     contacts: {
       title: 'Domina? Parašykite mums:',
       'contact us': 'Susisiekite su mumis:',
-      or: 'arba',
+      or: 'a r b a',
     },
   },
 };

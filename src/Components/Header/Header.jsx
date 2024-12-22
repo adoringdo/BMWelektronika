@@ -4,8 +4,11 @@ import Container from 'react-bootstrap/Container';
 import { Element } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Header.module.css';
+import { LanguageContext, translate } from '../Contexts/languageContext';
+import { useContext } from 'react';
 
 export default function Header() {
+  const { language } = useContext(LanguageContext);
   return (
     <Element id="home">
       <header className={styles.header}>
@@ -13,18 +16,10 @@ export default function Header() {
           <Row className="h-100">
             <Col className={styles.text}>
               <h1>
-                <span style={{ whiteSpace: 'nowrap' }}>
-                  Variklio{' '}
-                  <span style={{ color: 'var(--brand-secondary)' }}>
-                    temperatūros
-                  </span>
-                </span>{' '}
-                modifikacija
-                <br /> BMW automobiliams
+                {translate(language, 'header.title')}
               </h1>
               <p>
-                Suteikiam BMW turėtojams galimybę, matyti variklio temperatūrą
-                savo skydelyje vietoj autopiloto.
+                {translate(language, 'header.description')}
               </p>
             </Col>
             <Col></Col>

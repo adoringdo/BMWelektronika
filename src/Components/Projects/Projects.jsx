@@ -1,15 +1,17 @@
-import { projects } from "./data";
-import { useState } from "react";
-import { Element } from "react-scroll";
-import PropTypes from "prop-types";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Modal from "react-bootstrap/Modal";
-import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./Projects.module.css";
+import { projects } from './data';
+import { useContext, useState } from 'react';
+import { Element } from 'react-scroll';
+import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './Projects.module.css';
+import { LanguageContext, translate } from '../Contexts/languageContext';
 
 function Project({ project }) {
+  const { language } = useContext(LanguageContext);
   const [show, setShow] = useState(false);
 
   return (
@@ -18,10 +20,10 @@ function Project({ project }) {
         <img src={project.mainImg} alt="project showcase" />
       </Col>
       <Col md={6} className={styles.description}>
-        <h1>{project.title}</h1>
-        <p>{project.description}</p>
+        <h1>{translate(language, project.title)}</h1>
+        <p>{translate(language, project.description)}</p>
         <button className={styles.button} onClick={() => setShow(true)}>
-          Plačiau
+          {translate(language, 'projects.button')}
         </button>
       </Col>
       <Modal
@@ -33,9 +35,9 @@ function Project({ project }) {
         <Modal.Header
           closeButton
           closeVariant="white"
-          style={{ border: "none" }}
+          style={{ border: 'none' }}
         >
-          <Modal.Title style={{ flexGrow: "1", fontSize: "2rem" }}>
+          <Modal.Title style={{ flexGrow: '1', fontSize: '2rem' }}>
             {project.title}
           </Modal.Title>
         </Modal.Header>
@@ -75,9 +77,11 @@ Project.propTypes = {
 };
 
 export default function Projects() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Element id="projects">
-      <h1 className={styles.title}>Projektai</h1>
+      <h1 className={styles.title}>{translate(language, 'navbar.projects')}</h1>
       <Container className={styles.container}>
         {projects.map((project) => (
           <Project project={project} key={project.title} />
@@ -86,3 +90,4 @@ export default function Projects() {
     </Element>
   );
 }
+

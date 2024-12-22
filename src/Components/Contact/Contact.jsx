@@ -4,16 +4,21 @@ import facebook from "../../assets/facebook.png";
 import messenger from "../../assets/messenger.png";
 import ebay from "../../assets/ebay.png";
 import { Element } from "react-scroll";
+import { useContext } from "react";
+import { LanguageContext, translate } from "../Contexts/languageContext";
 
 export default function Contact() {
+
+  const { language } = useContext(LanguageContext);
+
   return (
     <Element id="contact" className={styles.contact}>
-      <h1 className={styles.contact}>Domina? Parašykite mums:</h1>
+      <h1 className={styles.contact}>{translate(language, 'contacts.title')}</h1>
       <h1 className={styles.email}>
         <img src={email} alt="email icon" /> bmwelektronikalt@gmail.com
       </h1>
-      <span className={styles.text}>a r b a</span>
-      <p className={styles.text}>Susisiekite su mumis:</p>
+      <span className={styles.text}>{translate(language, 'contacts.or')}</span>
+      <p className={styles.text}>{translate(language, 'contacts.contact us')}</p>
       <div className={styles.socials}>
         <div className={styles.social}>
           <a href="https://facebook.com/BMVelektronika" target="blank">

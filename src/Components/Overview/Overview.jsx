@@ -6,17 +6,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Overview.module.css";
 import adapter from "../../assets/Adapter.jpg";
 import adapter2 from "../../assets/Adapter2.jpg";
+import { useContext } from "react";
+import { LanguageContext, translate } from "../Contexts/languageContext";
 
 export default function Overview() {
+  
+  const { language } = useContext(LanguageContext);
+
   return (
     <Element id="installation">
       <Container fluid className={styles.container}>
         <Row className={styles.row}>
           <Col md={5} className={`${styles.description} px-5`}>
-            <h1>Lengva instaliacija</h1>
+            <h1>{translate(language, 'installation.title') }</h1>
             <p className="px-4">
-              Tik 4 laidai, LCI modeliams reikalinga nedidelė spidometro
-              modifikacija
+              {translate(language, 'installation.description')}
             </p>
             <a
               href="https://drive.google.com/drive/folders/151poO_M4wutoZhE5BGzFmFyZVIuw7pnL"
@@ -24,7 +28,7 @@ export default function Overview() {
               className={styles.button}
               rel="noreferrer"
             >
-              Laidų pajungimas
+              {translate(language, 'installation.button')}
             </a>
           </Col>
           <Col md={7} className={styles.imageContainer}>
