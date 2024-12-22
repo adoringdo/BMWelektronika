@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
 // Translation data
-const translations = {
+export const translations = {
   en: {
     navbar: {
       projects: 'Projects',
@@ -20,7 +20,7 @@ const translations = {
       title2: 'Module 2',
       description2:
         'M3 style engine water temperature for E9x series diesel cars',
-      button: "More"
+      button: 'More',
     },
     installation: {
       title: 'Easy installation',
@@ -52,7 +52,7 @@ const translations = {
       title2: 'Modulis 2',
       description2:
         'M3 stiliaus variklio vandens temperatūra E9x serijos dyzeliniams automobiliams',
-      button: 'Daugiau'
+      button: 'Daugiau',
     },
     installation: {
       title: 'Lengva instaliacija',
@@ -66,14 +66,6 @@ const translations = {
       or: 'a r b a',
     },
   },
-};
-
-const getNestedValue = (obj, path) => {
-  return path.split('.').reduce((acc, key) => acc?.[key], obj) || path;
-};
-
-export const translate = (language, key) => {
-  return getNestedValue(translations[language], key);
 };
 
 export const LanguageContext = createContext();

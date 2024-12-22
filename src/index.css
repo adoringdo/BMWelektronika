@@ -28,3 +28,7 @@
   background-clip: content-box;
   background-color: var(--brand-secondary);
 }
+
+.highlight {
+  color: var(--brand-secondary);
+}

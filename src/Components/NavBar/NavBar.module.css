@@ -1,51 +1,90 @@
 .navBar {
-    background-color: var(--brand-secondary);
-    padding: 4px 3%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    overflow: hidden;
+  background-color: var(--brand-secondary);
+  padding: 4px 3%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  overflow: hidden;
 }
 
 .navBar a {
-    color: white;
-    transition: color .15s ease-in-out,
-        transform .15s ease-in-out
+  color: white;
+  transition: color 0.15s ease-in-out, transform 0.15s ease-in-out;
 }
 
 .navBar a:hover {
-    color: var(--dark);
-    transform: scale(110%);
-    cursor: pointer;
+  color: var(--dark);
+  transform: scale(110%);
+  cursor: pointer;
 }
 
-
-
-.logoContainer>img {
-    width: 50px;
-    height: 50px;
-    margin-right: 3%;
+.logoContainer > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 3%;
 }
 
 .navBar .logoContainer:hover {
-    color: white;
+  color: white;
 }
 
-
 .navLinksContainer {
-    flex-grow: 1;
-    justify-content: flex-end;
-    gap: 3%;
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 3%;
 }
 
 .active {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.languageContainer {
+  display: flex;
+  cursor: default;
+}
+
+.navBar .language {
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background: none;
+  border: none;
+  position: relative;
+  cursor: default;
+}
+
+.language.active {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.navBar .language:not(.active) {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navBar .language:not(.active):hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+}
+
+.language:first-child::after {
+  content: '';
+  width: 1px;
+  height: 1.5rem;
+  position: absolute;
+  background-color: #f8efd4;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width: 991px) {
-    .navBar a:hover {
-        transform: unset;
-    }
+  .navBar a:hover {
+    transform: unset;
+  }
 }
+

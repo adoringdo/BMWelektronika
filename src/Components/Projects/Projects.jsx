@@ -8,7 +8,8 @@ import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Projects.module.css';
-import { LanguageContext, translate } from '../Contexts/languageContext';
+import { LanguageContext } from '../Contexts/languageContext';
+import { translate } from '../Functions/translationFunction';
 
 function Project({ project }) {
   const { language } = useContext(LanguageContext);
@@ -38,7 +39,7 @@ function Project({ project }) {
           style={{ border: 'none' }}
         >
           <Modal.Title style={{ flexGrow: '1', fontSize: '2rem' }}>
-            {project.title}
+            {translate(language, project.title)}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

@@ -3,12 +3,18 @@ import logo from '../../assets/logo.png';
 import { Link } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './NavBar.module.css';
-import { LanguageContext, translate } from '../Contexts/languageContext';
 import { useContext } from 'react';
+import { LanguageContext } from '../Contexts/languageContext';
+import { translate } from '../Functions/translationFunction';
+
 
 export default function NavBar() {
 
-  const { language } = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContext);
+
+  function changeLanguage(newLang){
+    newLang !== language && setLanguage(newLang);
+  }
 
   return (
     <Navbar expand="lg" className={styles.navBar}>
@@ -57,6 +63,20 @@ export default function NavBar() {
             >
               {translate(language, 'navbar.contacts')}
             </Link>
+          </li>
+          <li className={`nav-item ${styles.languageContainer}`}>
+            <button
+              className={styles.language + ' ' + (language === 'lt' ? styles.active : '')}
+              onClick={() => changeLanguage('lt')}
+            >
+              LT
+            </button>
+            <button
+              className={styles.language + ' ' + (language === 'en' ? styles.active : '')}
+              onClick={() => changeLanguage('en')}
+            >
+              EN
+            </button>
           </li>
         </ul>
       </Navbar.Collapse>

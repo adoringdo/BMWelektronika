@@ -5,7 +5,8 @@ import messenger from "../../assets/messenger.png";
 import ebay from "../../assets/ebay.png";
 import { Element } from "react-scroll";
 import { useContext } from "react";
-import { LanguageContext, translate } from "../Contexts/languageContext";
+import { LanguageContext } from "../Contexts/languageContext";
+import { translate } from "../Functions/translationFunction";
 
 export default function Contact() {
 

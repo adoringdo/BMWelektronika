@@ -4,8 +4,9 @@ import Container from 'react-bootstrap/Container';
 import { Element } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Header.module.css';
-import { LanguageContext, translate } from '../Contexts/languageContext';
+import { LanguageContext } from '../Contexts/languageContext';
 import { useContext } from 'react';
+import { translate } from '../Functions/translationFunction';
 
 export default function Header() {
   const { language } = useContext(LanguageContext);
@@ -16,7 +17,7 @@ export default function Header() {
           <Row className="h-100">
             <Col className={styles.text}>
               <h1>
-                {translate(language, 'header.title')}
+                {translate(language, 'header.title', 'highlight')}
               </h1>
               <p>
                 {translate(language, 'header.description')}

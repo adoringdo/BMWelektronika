@@ -7,7 +7,8 @@ import styles from "./Overview.module.css";
 import adapter from "../../assets/Adapter.jpg";
 import adapter2 from "../../assets/Adapter2.jpg";
 import { useContext } from "react";
-import { LanguageContext, translate } from "../Contexts/languageContext";
+import { LanguageContext } from "../Contexts/languageContext";
+import { translate } from "../Functions/translationFunction";
 
 export default function Overview() {
   
