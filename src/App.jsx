@@ -11,7 +11,7 @@ import { LanguageContext } from './Components/Contexts/languageContext';
 
 function App() {
   const [isLoading, setIsloading] = useState(true);
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(localStorage.getItem('language') || 'en');
 
   //loading screen
   useEffect(() => {

@@ -14,6 +14,7 @@ export default function NavBar() {
 
   function changeLanguage(newLang){
     newLang !== language && setLanguage(newLang);
+    localStorage.setItem('language', newLang);
   }
 
   return (
