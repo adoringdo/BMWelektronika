@@ -58,8 +58,8 @@ function Project({ project }) {
           {project.install && (
             <div className={styles.install}>
               <div className={styles.text}>
-                <h1>Modifikacija LCI modeliams</h1>
-                <p>{project.installDescription}</p>
+                <h1>{translate(language, project.installTitle)}</h1>
+                <p>{translate(language,project.installDescription)}</p>
               </div>
 
               <div className={styles.image}>

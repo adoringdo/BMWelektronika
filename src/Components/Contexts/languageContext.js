@@ -17,6 +17,8 @@ export const translations = {
       title1: 'Module 1',
       description1:
         'Engine water temperature instead of autopilot mode (with "needle sweep) for E6x, E7x, E9x cars.',
+      installTitle1: 'Modification for LCI models',
+      installDescription1: 'LCI models require a small speedometer modification',
       title2: 'Module 2',
       description2:
         'M3 style engine water temperature for E9x series diesel cars',
@@ -49,6 +51,9 @@ export const translations = {
       title1: 'Modulis 1',
       description1:
         'Variklio vandens temperatūros vietoj autopiloto modas (su "needle sweep) E6x, E7x, E9x automobiliams.',
+      installTitle1: 'Modifikacija LCI modeliams',
+      installDescription1:
+        'LCI modeliams reikalinga nedidelė spidometro modifikacija',
       title2: 'Modulis 2',
       description2:
         'M3 stiliaus variklio vandens temperatūra E9x serijos dyzeliniams automobiliams',

@@ -12,8 +12,9 @@ export const projects = [
     pictures: [firstProjectImg2, firstProjectImg1],
     video: 'https://www.youtube.com/embed/IucMdOThtOk?si=JebmibTjVYR04HNK',
     install: firstInstallImg3,
+    installTitle: 'projects.installTitle1',
     installDescription:
-      'LCI modeliams reikalinga nedidelė spidometro modifikacija',
+      'projects.installDescription1',
   },
   {
     mainImg: projectmain2,
