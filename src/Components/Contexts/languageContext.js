@@ -11,27 +11,27 @@ export const translations = {
     header: {
       title: 'Engine temperature MOD for BMW cars',
       description:
-        'Give BMW owners the ability to see the engine temperature on their dashboard instead of the autopilot.',
+        'We give BMW owners the ability to see the engine water temperature on their dashboard instead of the autopilot.',
     },
     projects: {
       title1: 'Module 1',
       description1:
         'Engine water temperature instead of autopilot mode (with "needle sweep) for E6x, E7x, E9x cars.',
       installTitle1: 'Modification for LCI models',
-      installDescription1: 'LCI models require a small speedometer modification',
+      installDescription1: 'A KOMBI modification is required for E6x, E7x LCI models',
       title2: 'Module 2',
       description2:
-        'M3 style engine water temperature for E9x series diesel cars',
-      button: 'More',
+        'M3-Style engine water temperature display for E9x Diesel Cars',
+      button: 'Learn more',
     },
     installation: {
       title: 'Easy installation',
       description:
-        'Only 4 wires, E6x, E7x LCI models require a small KOMBI modification',
-      button: 'Wire connection',
+        'Only 4 wires; a small KOMBI modification is required for E6x, E7x LCI models',
+      button: 'Wiring diagram',
     },
     contacts: {
-      title: 'Interested? Write to us:',
+      title: 'Interested? Write to us at:',
       'contact us': 'Contact us:',
       or: 'o r',
     },
@@ -39,7 +39,7 @@ export const translations = {
   lt: {
     navbar: {
       projects: 'Projektai',
-      installation: 'Įdiegimas',
+      installation: 'Instaliacija',
       contacts: 'Kontaktai',
     },
     header: {
@@ -53,11 +53,11 @@ export const translations = {
         'Variklio vandens temperatūros vietoj autopiloto modas (su "needle sweep) E6x, E7x, E9x automobiliams.',
       installTitle1: 'Modifikacija LCI modeliams',
       installDescription1:
-        'LCI modeliams reikalinga nedidelė spidometro modifikacija',
+        'E6x, E7x LCI modeliams reikalinga KOMBI modifikacija',
       title2: 'Modulis 2',
       description2:
         'M3 stiliaus variklio vandens temperatūra E9x serijos dyzeliniams automobiliams',
-      button: 'Daugiau',
+      button: 'Plačiau',
     },
     installation: {
       title: 'Lengva instaliacija',
