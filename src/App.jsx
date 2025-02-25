@@ -8,6 +8,7 @@ import Projects from './Components/Projects/Projects';
 import Overview from './Components/Overview/Overview';
 import Contact from './Components/Contact/Contact';
 import { LanguageContext } from './Components/Contexts/languageContext';
+import ScrollIndicator from './Components/Scrollbar/ScrollIndicator';
 
 function App() {
   const [isLoading, setIsloading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         }}
       >
         <LanguageContext.Provider value={{ language, setLanguage }}>
+          <ScrollIndicator />
           <NavBar />
           <Header />
           <Projects />

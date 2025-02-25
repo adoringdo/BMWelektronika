@@ -2,3 +2,19 @@
   background-color: var(--brand-main);
   color: var(--font-main);
 }
+
+html {
+  overflow: auto; /* Ensure scrolling still works */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+

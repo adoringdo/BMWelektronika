@@ -1,5 +1,6 @@
 .header {
   height: var(--viewport-height);
+  max-height: 800px;
   max-width: unset;
   background-image: url('../../assets/main-car-cropped.jpg');
   background-size: 60%;
@@ -80,6 +81,7 @@ header::after {
     background-size: cover;
     background-position-x: 30%;
     background-position-y: center;
+    max-height: 600px;
   }
 
   .text h1 {
