@@ -6,6 +6,7 @@ import styles from './NavBar.module.css';
 import { useContext } from 'react';
 import { LanguageContext } from '../Contexts/languageContext';
 import { translate } from '../Functions/translationFunction';
+import './navbar-overrides.css';
 
 
 export default function NavBar() {

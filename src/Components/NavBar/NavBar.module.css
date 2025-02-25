@@ -86,5 +86,20 @@
   .navBar a:hover {
     transform: unset;
   }
+  .navbar-collapse.collapse {
+    opacity: none;
+    pointer-events: none;
+    flex-basis: unset;
+    flex-grow: 0;
+  }
+  .navbar-collapse.collapse.show {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    top: 100%;
+    right: 20px;
+    position: absolute;
+    overflow: visible;
+    background-color: rgba(161, 25, 11, 0.7);
+    padding: 20px 40px;
+  }
 }
-
