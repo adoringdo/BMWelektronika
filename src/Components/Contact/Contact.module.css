@@ -1,71 +1,70 @@
 .contact {
-    text-align: center;
-    padding: 2rem;
-    color: #999;
+  text-align: center;
+  padding: 2rem;
+  color: #999;
 }
 
 .contact img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .contactHeader::before {
-    content: '';
-    height: 1px;
-    width: 40%;
-    position: absolute;
-    top: 50%;
-    transform: translateX(-106%);
-    background-color: #f8efd4;
-
+  content: '';
+  height: 1px;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-106%);
+  background-color: #f8efd4;
 }
 
 .text {
-    font-size: 1.2rem;
-    color: #999;
-    margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 2rem;
 }
 
 span.text {
-    display: inline-block;
-    color: #b8b8b8;
-    margin-bottom: 2rem;
+  display: inline-block;
+  color: #b8b8b8;
+  margin-bottom: 2rem;
 }
 
 .email {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: white;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .social a {
-    text-decoration: none;
-    color: var(--font-main);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  text-decoration: none;
+  color: var(--font-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .social a:hover {
-    transform: scale(105%);
+  transform: scale(105%);
 }
 
-
 @media screen and (max-width: 700px) {
-    .email {
-        font-size: 1.3rem;
-    }
+  .email {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 340px) {
-    .contact {
-        padding: 2rem 10px;
-    }
+  .contact {
+    padding: 2rem 10px;
+  }
 }
